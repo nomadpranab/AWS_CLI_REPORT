@@ -18,7 +18,7 @@ set -x
 ##################################################
 #
 #List S3 buckets
-#Test
+#Test1
 echo "List of S3 buckets"
 aws s3 ls
 
