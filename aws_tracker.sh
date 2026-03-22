@@ -22,7 +22,7 @@ set -x
 echo "List of S3 buckets"
 aws s3 ls
 
-#list EC2 Instance
+#List EC2 Instance
 echo "List of EC2 Instance ID that are running"
 
 aws ec2 describe-instances --filter "Name=instance-state-name,Values=running" --query "Reservations[].Instances[].{ID: InstanceId}" --output table
